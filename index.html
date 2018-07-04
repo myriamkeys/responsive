@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ES">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Poner el favicon.ico en el directorio raíz -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> 
+
+        <!-- CSS RESETEO -->
+        <link rel="stylesheet" href="css/normalize.css">
+         <!-- CSS FLEXSLIDER -->
+        <link rel="stylesheet" href="css/flexslider.css">
+        <!-- NUESTRO CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- CROSS BROWSER 
+        <script src="js/modernizr-2.8.3.min.js"></script>-->
+    </head>
+    <body>
+    <!-- CONDICIONAL PARA IE8 E INFERIORES -->
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Estás usando un navegador <strong>obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a>
+             para mejorar la experiencia de navegación.</p>
+        <![endif]-->
+
+
+        <!-- AQUÍ COMIENZA TU WEB -->
+        
+        <header>
+            
+            <div class="grid">
+                <div>
+                    <div class="imagen"><img src="img/logo.svg"></div>
+                    <label for="boton">
+                        <img src="img/menu.svg">
+                    </label>
+                    <input type="checkbox" id="boton">
+                    <nav class="menu-top">
+                        <ul>
+                            <li><a href='#'>ABOUT</a></li>
+                            <li><a href='#'>SERVICES</a></li>
+                            <li><a href='#'>SOLUTIONS</a></li>
+                            <li><a href='#'>CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <nav class="menu-escritorio">
+                        <ul>
+                            <li><a href='#'>ABOUT</a></li>
+                            <li><a href='#'>SERVICES</a></li>
+                            <li><a href='#'><img src="img/logo.svg"></a></li>
+                            <li><a href='#'>SOLUTIONS</a></li>
+                            <li><a href='#'>CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>    
+            </div>
+        
+        </header>
+        <!--///////////////////////////////////////////////-->   
+    <!-- Aquí comienza el slider -->
+        <div class="flexslider">
+		  <ul class="slides">
+		    <li>
+		      <img src="img/1.jpg" />
+		    </li>
+		    <li>
+		      <img src="img/2.jpg" />
+		    </li>
+		    <li>
+		      <img src="img/3.jpg" />
+		    </li>
+		    <li>
+		      <img src="img/4.jpg" />
+		    </li>
+		  </ul>
+		</div>
+    <!-- Aquí termina el slider-->  
+        <section class="section-uno">
+            <div class="grid">
+                <div>
+                <img src="img/icon_semantic.svg">
+             
+                <h3>HTML5 Semantics</h3>
+                <p>Giving meaning to structure, semantics are font and center with HTML5. A richer set of tags, along with RDFa and microformats.</p>
+            </div>
+            <div>
+                <img src="img/icon_media.svg">
+                
+                <h3>Multimedia Video</h3>
+                <p>Audio and video are first class citizens in the HTML5 web, living in harmony with your apps and sites. Lights, camera, action!</p>
+            </div>
+
+            <div>
+                <img src="img/icon_graph.svg">
+                
+                <h3>Graphics effects</h3>
+                <p>SVG, Canvas, WebGL, and CSS3, you're sure to amaze your users with stunning visuals natively rendered in the browser.</p>
+            </div>
+            <div>
+                <img src="img/icon_css.svg">
+                
+                <h3>CSS3 Styling</h3>
+                <p>CSS3 delivers a wide range of stylization and effects, enhancing the web app without sacrificing your semantic structure.</p>
+            </div>  
+            </div>
+        </section>
+        
+        
+          <section class="section-dos">
+              
+              <div class="grid">
+              
+                <div class="support">
+                    <h2>support list</h2>
+                    <div>
+                        <ul>
+                            <li><a href="#">Boiler plate</a></li>
+                            <li><a href="#">Pro HTML5 Programming</a></li>
+                            <li><a href="#">A list apart</a></li>
+                            <li><a href="#">Smashing Magazine</a></li>
+                            <li><a href="#">Can I Use</a></li>
+                            <li><a href="#">W3Schools</a></li>
+                        </ul>
+                    </div>
+                </div>
+                  
+                  
+                <div class="history">
+                    <h2>internet history</h2>
+                    <div class="embed-container">
+                        <iframe src="https://player.vimeo.com/video/2696386?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div> 
+               </div>
+              
+              </div>
+        
+        </section>
+        
+        
+        
+        
+          <footer>
+              
+              <div class="grid">
+              
+              <div>
+                  <h2>Contact</h2>
+                <form>
+                    <input type="text" name="nombre" placeholder="NAME">
+                     <input type="text" name="email" placeholder="MAIL">
+                     <textarea placeholder="TEXT"></textarea>
+                     <input type="submit" value="enviar">  
+                </form>
+              </div>
+              
+              
+              <div>
+                <h2>Where</h2>    
+                <div id="map"></div>
+              </div>
+                  
+            </div>      
+        
+        </footer>
+
+
+        <!-- LOS SCRIPT Y VINCULOS A JS ABAJO ANTES DE CIERRE DE BODY -->
+        
+<!--         LIBRERÍA JQUERY -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        
+         <!-- FLEXSLIDER -->
+        <script src="js/jquery.flexslider.js"></script>
+
+
+<!--         PARA TU JS -->
+        <script src="js/main.js"></script>
+        
+        <!-- MAPA GOOGLE -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 17,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(36.721336, -4.473888), // Gauss Multimedia
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"stylers":[{"hue":"#ff8800"},{"gamma":0.4}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(36.721336, -4.473888),
+                    map: map,
+                    title: 'Gauss Multimedia'
+                });
+            }
+        </script>
+        
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>-->
+    </body>
+</html>

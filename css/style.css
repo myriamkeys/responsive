@@ -1,0 +1,386 @@
+/* CSS */
+
+img {max-width: 100%}
+.embed-container {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.grid {max-width: 900px; padding: 20px; margin: 0 auto;}
+
+body {background: url("../img/bg_body.png") repeat;
+font-family: 'Open Sans', sans-serif;}
+
+header {
+    background: white;
+    
+}
+
+
+header img {
+    max-width: 60px;
+}
+.imagen{
+    padding-bottom: 8px;
+}
+label {cursor: pointer;}
+label img { max-width: 30px;position: relative;}
+
+#boton, .menu-top {display: none;}
+#boton:checked + .menu-top {display: block}
+
+
+/* menu */
+header .grid div * {
+    margin: 0 auto;
+}
+
+.menu-escritorio {display:none}
+
+.menu-top {
+position: relative;
+    z-index: 1;
+}
+
+.menu-top ul {
+    position: absolute;
+    width: 100%;
+}
+
+.menu-top li a {
+	display: block;
+	background: white;
+    padding: 8px 3px;
+    font-weight: bold;
+    width: 150px;
+    color: #333;
+    text-align: center;
+
+}
+
+.menu-top li:first-child a {
+    padding-top: 30px;
+    
+}
+
+.menu-top li a:hover {
+    color: #EF652A;
+}
+
+
+/* section uno */
+
+.section-uno .grid div * {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-size: 22px;
+    padding-bottom: 15px;
+    width: 120px;
+    font-weight: 600
+    
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    line-height: 18px;
+    border-top: 1px solid white;
+    padding-top: 15px;
+    margin-top: 11px;
+    padding-bottom: 20px;
+
+}
+
+/* section dos*/
+
+.section-dos {
+    background: #CC360F;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: white;
+    border-top: 2px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.support h2 {
+    text-align: center;
+}
+
+
+.support ul {
+    text-align: center;
+}
+
+
+.support ul li a {
+    display: block;
+    color: white;
+     background: #FFA500;
+    padding: 5px;
+    margin: 5px;
+    float:left;
+    font-size: 20px;
+}
+.support ul li {
+    display: inline-block;
+}
+
+/* formulario */
+
+footer {
+      background: #383838;
+        width: 100%;
+}
+
+footer h2 {
+    font-weight: bolder;
+    border: none;
+    padding-top: 12px;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+input[type="text"], textarea, input[type="submit"]{
+    width: 100%;
+    height: 55px;
+    border: 5px solid #dadada;
+    border-bottom: 0;
+    padding-left: 20px;
+
+    
+}
+
+textarea {
+    border-bottom: 5px solid #dadada;
+      min-height: 90px;
+    max-height: 90px;
+    padding-top: 20px;
+}
+
+input[type="submit"]{
+    color: #666666;
+    font-weight: bolder;
+    font-size: 18px;
+    background: #E0E0E0;
+    border: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+input[type="text"]:focus, textarea:focus {
+   background: #F3C99C;
+    
+    
+}
+
+ input[type="submit"]:focus,  input[type="submit"]:hover{
+     background: #FFA500;
+}
+
+/* mapa */
+#map {
+	width: 100%;
+    height: 300px;
+}
+
+
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* COMIENZAN LOS MEDIA QUERY */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+
+/* activo desde 768px y más */
+@media screen and (min-width:600px) {
+    
+    .section-uno .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .section-uno .grid div {
+        width: 50%;
+    }
+    
+    .section-uno .grid div:nth-child(odd){
+        padding-right:30px;
+    }
+    
+     .section-uno .grid div:nth-child(3), .section-uno .grid div:nth-child(4) {
+        padding-top:15px;
+    }
+    
+    footer .grid{
+        display: flex
+    }
+    
+    footer .grid div {
+        width: 50%;
+    }
+    
+    footer .grid div:first-child {
+        margin-right: 20px;
+    }
+    
+    /* mapa */
+#map {
+	width: 100%;
+    height: 280px;
+}
+    
+    
+}
+
+
+/* activo desde 768px y más */
+@media screen and (min-width:960px) {
+    
+        .section-uno .grid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .section-uno .grid div {
+        width: 100%;
+        flex: 1;
+    }
+    
+     .section-uno .grid div:nth-child(3), .section-uno .grid div:nth-child(4) {
+        padding-top:0;
+    }
+    
+    
+     .section-uno .grid div{
+        padding-right:30px;
+    }
+    
+     .section-uno .grid div:last-child{
+        padding-right:0;
+    }
+    
+    
+    /* section-dos */
+    
+    .section-dos .grid {
+        display: flex
+    }
+    
+    .section-dos .grid div {
+        width: 100%
+    }
+    .support {
+        flex: 1;
+        padding-right: 30px
+    }
+    
+     .history {
+        flex: 2
+    }
+    
+    
+    ul {
+        text-align: center;
+}
+
+
+.support ul li a {
+    display: block;
+    color: white;
+    background: transparent;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+.support ul li {
+    display: flex;
+    
+    border-bottom: 1px solid #FFA500;
+}
+    
+    .support h2{
+        text-align: left;
+    }
+    
+
+
+
+.menu-top {
+    display: none;
+}
+
+
+.imagen, label, #boton {display:none}
+
+#boton:checked + .menu-top {
+    display: none;
+    }
+    .menu-escritorio ul {
+        position: relative;
+         padding: 12px 0;
+    }
+    .menu-escritorio ul li img {
+    position: absolute;
+    top: -7px;
+    right: 417px;
+    max-width: 60px;
+    
+    }
+.menu-escritorio ul li{
+    display: inline;
+}
+    
+    .menu-escritorio {
+        display: block;
+    }    
+    .menu-escritorio ul li a {
+        color: #666666;
+        display: inline-block;
+        padding-right: 40px;
+        font-size: 16px;
+        font-weight: 600
+       
+    }    
+    .menu-escritorio ul li a:hover{
+        color: #EF652A;
+    }
+    
+       .menu-escritorio ul li:last-child a{
+    
+        padding-right: 0;
+        
+    } 
+    
+    .menu-escritorio ul li:nth-child(2) a {
+        margin-right: 70px;
+    }
+#map {
+	width: 100%;
+    height: 285px;
+}
+    }
